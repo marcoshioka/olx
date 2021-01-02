@@ -21,7 +21,8 @@ Repositório com estrutura de automação de testes da OLX, com Javascript (Node
 - Se caso solicitado na execução do BDD, o report cucumber-html-report é gerado no diretório "report"
 - Foi adicionado o método RETRIES no index.js, para que a automação re-execute um step que falhou mais 2 vezes 
 - O print gerado no segundo teste é exibido no diretório "mochawesome-report/snapshots/olx.feature/print"
-- Foi criado um .gitignore para não subir os prints e vídeos para o repositório
+- Foi criado um .gitignore para não subir os prints e vídeos para o repositório, além da pasta "node_modules"
+- Foram adicionados logs aos métodos da automação, para exibir mensagens no console durante a execução
 
 #### Reports:
 Temos configurado o Mochawesome-report e o Cucumber-html-report neste projeto
@@ -79,8 +80,8 @@ npm run tags TAGS='@resultado_segunda_página'
 npm run tags TAGS='@olx'; npm run report
 ```
 
-### Circle CI: 
-Foi incluído um step para execução dessa automação no Circle CI (CI/CD/Continuous Testing). A configuração está no arquivo "circle.yml" na raíz do projeto. 
+### CircleCI: 
+Foi incluída uma configuração para execução dessa automação no CircleCI (CI/CD/Continuous Testing). A configuração está no arquivo "circle.yml" na raíz do projeto. Com essa configuração o projeto é executado no Circle CI com Cucumber e Electron, disponibilizando as evidências/artifacts no fim da execução.
 
 ### Observação:
 - Foi criado o step "E fechar o modal OLX Pay disponível" na feature para dispensar o modal/pop-up do OLX Pay quando exibido. Se o modal for removido do site, esse step e seus métodos devem ser desconsiderados da automação.

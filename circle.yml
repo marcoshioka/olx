@@ -14,7 +14,7 @@ jobs:
       - run:
           name: Install dependencies
           command: npm ci
-      - run: npm run tags TAGS='@olx'; npm run report
+      - run: npm run cy:verify
       # save npm dependencies and Cypress binary for future runs
       - save_cache:
           key: cache-{{ checksum "package.json" }}
@@ -26,7 +26,7 @@ jobs:
       #    command: npm run start:ci
       #    background: true
       # - run: npm run e2e:record
-      - run: npm run cy:run
+      - run: npm run tags TAGS='@olx'; npm run report
 
       - store_artifacts:
           path: /root/project/cypress/videos
@@ -43,5 +43,3 @@ workflows:
   build:
     jobs:
       - test
-
-      
