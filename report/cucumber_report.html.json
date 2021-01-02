@@ -1,0 +1,166 @@
+[
+  {
+    "description": "Como usuário do sistema da OLX\nEu quero realizar pesquisas\nPara encontrar meus produtos desejados",
+    "keyword": "Funcionalidade",
+    "name": "Pesquisa OLX",
+    "line": 5,
+    "id": "pesquisa-olx",
+    "tags": [
+      {
+        "name": "@olx",
+        "line": 4
+      }
+    ],
+    "uri": "olx.feature",
+    "elements": [
+      {
+        "id": "pesquisa-olx;verificar-primeiro-resultado-da-pesquisa",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Verificar primeiro resultado da pesquisa",
+        "tags": [
+          {
+            "name": "@olx",
+            "line": 4
+          },
+          {
+            "name": "@primeiro_resultado",
+            "line": 10
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 12,
+            "name": "que eu vá até a página da OLX",
+            "result": {
+              "status": "passed",
+              "duration": 3139000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 13,
+            "name": "eu realizar uma pesquisa por 'caminhão'",
+            "result": {
+              "status": "passed",
+              "duration": 3569000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 14,
+            "name": "eu devo ver o primeiro resultado da pesquisa",
+            "result": {
+              "status": "passed",
+              "duration": 89000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 15,
+            "name": "fechar o modal OLX Pay disponível",
+            "result": {
+              "status": "passed",
+              "duration": 8225000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 16,
+            "name": "imprimir o título com o valor do primeiro resultado",
+            "result": {
+              "status": "passed",
+              "duration": 75000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "pesquisa-olx;verificar-resultado-da-pesquisa-na-segunda-página",
+        "keyword": "Scenario",
+        "line": 19,
+        "name": "Verificar resultado da pesquisa na segunda página",
+        "tags": [
+          {
+            "name": "@olx",
+            "line": 4
+          },
+          {
+            "name": "@resultado_segunda_página",
+            "line": 18
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 20,
+            "name": "que eu vá até a página da OLX",
+            "result": {
+              "status": "passed",
+              "duration": 11533000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 21,
+            "name": "eu realizar uma pesquisa por 'notebook'",
+            "result": {
+              "status": "passed",
+              "duration": 3740000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 22,
+            "name": "eu devo ver o resultado da pesquisa com mais de uma página",
+            "result": {
+              "status": "passed",
+              "duration": 181000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 23,
+            "name": "fechar o modal OLX Pay disponível",
+            "result": {
+              "status": "passed",
+              "duration": 8390000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 24,
+            "name": "me direcionar para a segunda página dos resultados",
+            "result": {
+              "status": "passed",
+              "duration": 3752000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 25,
+            "name": "tirar um print do anúncio da segunda página",
+            "result": {
+              "status": "passed",
+              "duration": 26623000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

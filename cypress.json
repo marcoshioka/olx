@@ -1,0 +1,15 @@
+{
+    "ignoreTestFiles": [
+        "*.md"
+    ],
+    "reporter": "mochawesome",
+    "reporterOptions": {
+        "overwrite": true,
+        "html": true,
+        "json": true,
+        "charts": true,
+        "pretty": true
+    },
+    "screenshotsFolder": "mochawesome-report/snapshots",
+    "chromeWebSecurity": false
+}
