@@ -32,7 +32,7 @@ jobs:
           path: /root/project/cypress/videos
 
       - store_artifacts:
-          path: /root/project/cypress/report    
+          path: /root/project/report    
                 
       - store_artifacts:
           path: /root/project/mochawesome-report
